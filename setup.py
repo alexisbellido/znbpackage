@@ -25,6 +25,9 @@ with io.open(path.join(here, 'znbpackage/__init__.py'), 'rt', encoding='utf8') a
 setup(
     name='znbpackage',
     version=version,
+    author='Alexis Bellido',
+    author_email='a@zinibu.com',
+    license='BSD, see LICENSE file',
     description='A basic Python package.',
     long_description=readme,
     packages=find_packages(),
