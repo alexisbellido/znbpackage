@@ -10,7 +10,9 @@ import io
 import re
 from os import path
 
-from setuptools import setup
+from setuptools import setup, find_packages
+
+packages = find_packages()
 
 here = path.abspath(path.dirname(__file__))
 
@@ -22,5 +24,9 @@ with io.open(path.join(here, 'znbpackage/__init__.py'), 'rt', encoding='utf8') a
 
 setup(
     name='znbpackage',
-    version=version
+    version=version,
+    description='A basic Python package.',
+    long_description=readme,
+    packages=find_packages(),
+    include_package_data=True
 )
