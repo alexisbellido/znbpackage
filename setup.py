@@ -31,5 +31,5 @@ setup(
     description='A basic Python package.',
     long_description=readme,
     packages=find_packages(),
-    include_package_data=True
+    include_package_data=True,
 )
